@@ -1,7 +1,8 @@
 import styled from 'styled-components/native';
 
-export const Container = styled.ScrollView`
+export const Container = styled.View`
     background-color: #000;
+    flex: 1;
 `;
 
 export const MapContainer = styled.View`
@@ -31,15 +32,6 @@ export const Img = styled.Image`
 
 export const PointsContainer = styled.View`
     padding: 15px;
-`;
-
-export const Items = styled.View.attrs({
-    borderBottomColor: '#888',
-    borderBottomWidth: 0.5,
-    marginBottom: 30,
-    paddingBottom: 20
-})`
-margin-bottom: 20px;
 `;
 
 export const Item = styled.TouchableOpacity`

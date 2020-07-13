@@ -61,9 +61,15 @@ export default function PayLocals() {
                         style={{
                             width: '100%',
                             height: '100%',
-                        }} 
+                        }}
                         loadingEnabled={initialPosition[0] === 0}
                         initialRegion={{
+                            latitude: initialPosition[0],
+                            longitude: initialPosition[1],
+                            latitudeDelta: 0.014,
+                            longitudeDelta: 0.014
+                        }}
+                        region={{
                             latitude: initialPosition[0],
                             longitude: initialPosition[1],
                             latitudeDelta: 0.014,
@@ -95,7 +101,12 @@ export default function PayLocals() {
             <PointsContainer>
                 {points.map(point => {
                     return (
-                        <Item key={String(point.id)}>
+                        <Item onPress={() => setInitialPosition([
+                            point.latitude,
+                            point.longitude
+                        ])}
+                            key={String(point.id)}
+                        >
                             <Img source={storeImg} />              
                             <ItemContent>
                                 <ItemTitle>{point.name}</ItemTitle>
