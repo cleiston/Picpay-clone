@@ -4,7 +4,7 @@ import { AntDesign, Ionicons } from '@expo/vector-icons';
 
 import PayButton from './components/PayButton';
 
-import  HomeScreen from './screens/Home';
+import HomeScreen from './screens/Home';
 import WalletScreen from './screens/Wallet';
 import PayScreen from './screens/Pay';
 import NotificationsScreen from './screens/Notifications';
@@ -34,7 +34,7 @@ const icons = {
 export default function Navigation() {
     return (
         <Tab.Navigator
-            initialRouteName="Notifications"
+            initialRouteName="Home"
             screenOptions={({ route, navigation }) => ({
                 tabBarIcon: ({ color, size, focused }) => {
                     if (route.name === 'Pay') return (

@@ -69,15 +69,17 @@ export default function Pay(){
                 <NavigationContainer independent={true}>
                     <Tab.Navigator 
                         tabBarOptions={{
-                        labelStyle: { fontSize: 12, color: '#fff' },
-                        style: { backgroundColor: '#000', flex: 1},
-                        indicatorStyle: {
-                            backgroundColor: '#10c86e',
-                        },
-                    }}>
+                            labelStyle: { fontSize: 12, color: '#fff' },
+                            style: { backgroundColor: '#000', flex: 1},
+                            indicatorStyle: {
+                                backgroundColor: '#10c86e',
+                            },
+                        }}>
+
                         <Tab.Screen name="Principais" component={PayMain} />
                         <Tab.Screen name="Locais" component={PayLocals} />
                         <Tab.Screen name="Store" component={PayStore} />
+                        
                     </Tab.Navigator>
                 </NavigationContainer>
           </Container>

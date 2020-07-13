@@ -34,7 +34,7 @@ export const Avatar = styled.Image`
 export const Description = styled.Text`
     color: #fff;
     margin-left: 15px;
-    font-size: 16px;
+    font-size: 14px;
 `;
 
 export const Bold = styled.Text`
@@ -47,7 +47,7 @@ export const CardBody = styled.View`
 
 export const UserName = styled.Text`
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
 `;
 
 export const CardFooter = styled.View`
